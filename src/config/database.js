@@ -9,7 +9,7 @@ export default async () => {
       },
     },
     production: {
-      url: ``,
+      url: `mongodb+srv://${process.env.DD_USER}:${process.env.DB_PASSWORD}@${process.env.DB_PORT}/${process.env.DB_NAME}?retryWrites=true&w=majority`,
       options: {},
     },
   };
